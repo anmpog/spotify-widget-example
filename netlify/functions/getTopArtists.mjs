@@ -8,7 +8,7 @@ export default async function getTopArtists() {
       'Content-Type': 'application/x-www-form-urlencoded',
       Authorization:
         'Basic ' +
-        new Buffer.from(
+        Buffer.from(
           process.env.CLIENT_ID + ':' + process.env.CLIENT_SECRET
         ).toString('base64'),
     },
